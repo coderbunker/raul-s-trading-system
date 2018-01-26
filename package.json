@@ -1,0 +1,40 @@
+{
+  "name": "trading-system",
+  "version": "1.0.0",
+  "description": "Trading system for cryptocurrencies market",
+  "main": "index.js",
+  "scripts": {
+    "start": "env DEBUG=*,-express:* node ./app.js",
+    "install": "npm install --save-dev gemini-api && npm install -- save-dev bitstamp.net && npm install --save-dev pg && npm install --save-dev eslint-config-airbnb-base@latest && npm install --save-dev eslint@^4.9.0 && npm install --save-dev eslint-plugin-import@^2.7.0 && npx install-peerdeps --dev eslint-config-airbnb && npm install --save-dev eslint && npm install --save-dev bower && npm install --save-dev net && npm install kraken-api",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix **/*.js --ignore-pattern node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderbunker/raul-s-trading-system.git"
+  },
+  "author": "Dmitry K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderbunker/raul-s-trading-system/issues"
+  },
+  "homepage": "https://github.com/coderbunker/raul-s-trading-system#readme",
+  "devDependencies": {
+    "bitstamp.net": "0.0.1",
+    "bower": "^1.8.2",
+    "crypto-exchange": "^2.3.3",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-recommended": "^2.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "gemini-exchange-api": "^1.0.4",
+    "kraken-api": "^1.0.0",
+    "net": "^1.0.2",
+    "pg": "^7.4.1",
+    "wscat": "^2.1.1"
+  },
+  "dependencies": {}
+}
