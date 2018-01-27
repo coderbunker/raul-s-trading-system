@@ -9,9 +9,13 @@ client.connect();
 module.exports = {
 
   save: async (table, json, pairs) => {
-    pairs.forEach(pair => {
-      module.exports.insertData(table, json[pair], pair);
-    });
+    if (pairs instanceof Array) {
+      pairs.forEach(pair => {
+        module.exports.insertData(table, json[pair], pair);
+      });
+    } else {
+      module.exports.insertData(table, json[pairs], pairs);
+    }
   },
  
   insertData: async (table, data, pair) => {

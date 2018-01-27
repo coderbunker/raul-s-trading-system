@@ -4,6 +4,8 @@ const net = require('net');
 const config = require('./config/config.js');
 const kraken = require('./api/services/KrakenService.js');
 const gemini = require('./api/services/GeminiService.js');
+const bitfinex = require('./api/services/BitfinexService.js');
+const gdax = require('./api/services/GdaxService.js');
 
 const fs = require('fs');
 const util = require('util');
@@ -31,7 +33,10 @@ async function run() {
 	// await getKrakenData();
 	// await getBitstamp();
 
-	await gemini.process();
+	// await gemini.process();
+	// await gemini1.process();
+	// await bitfinex.process();
+	await gdax.process();
 }
 
 // region data source
